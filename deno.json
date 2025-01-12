@@ -1,0 +1,8 @@
+{
+    "tasks": {
+      "start": "deno run --allow-net --env-file=.env --allow-env--import-map=imports_map.json index.ts",
+      "dev": "deno run --allow-net --env-file=.env --allow-env --watch --import-map=imports_map.json index.ts",
+      "test": "deno test --allow-env --allow-net tests/"
+    }
+
+}

@@ -1,8 +1,8 @@
 import { Application, Router } from "oak";
+import { PORT } from "./constants/constants.ts";
 
 const app = new Application();
 const router = new Router();
-const PORT = 8000;
 
 
 app.use(router.routes());
@@ -10,7 +10,7 @@ app.use(router.allowedMethods());
 
 
 router.get("/", ({request,response}) => {
-    response.body = "Hello, World!";
+    response.body = "Hello,Deno World!";
 });
 
 
